@@ -5,25 +5,25 @@ int choice, celcius, fahrenheit;
 void fah_to_cel() {
     printf("\nPlease enter the temperature in Fahrenheit: ");
     scanf("%d", &fahrenheit);
-    printf("\nThe temperature in Celcius is: %f", (fahrenheit - 32)/1.8);
+    printf("\nThe temperature in Celcius is: %f°C", (fahrenheit - 32)/1.8);
 }
 
 void cel_to_fah() {
     printf("\nPlease enter the temperature in Celcius: ");
     scanf("%d", &celcius);
-    printf("\nThe temperature in Fahrenheit is: %f", (celcius * 1.8 ) + 32);
+    printf("\nThe temperature in Fahrenheit is: %f°F", (celcius * 1.8 ) + 32);
 }
 
 void fah_to_kel() {
     printf("\nPlease enter the temperature in Fahrenheit: ");
     scanf("%d", &fahrenheit);
-    printf("\nThe temperature in kelvin is: %f", (fahrenheit + 459.67 ) * 5/9 );
+    printf("\nThe temperature in kelvin is: %f°K", (fahrenheit + 459.67 ) * 5/9 );
 }
 
 void cel_to_kel() {
     printf("\nPlease enter the temperature in celcius: ");
     scanf("%d", &celcius);
-    printf("\nThe temperature in kelvin is: %f", (celcius + 273.15 ));
+    printf("\nThe temperature in kelvin is: %f°K", (celcius + 273.15 ));
 }
 
 int main()
@@ -42,4 +42,5 @@ int main()
         case 3: fah_to_kel(); break;
         case 4: cel_to_kel(); break;
     }
+    printf("\n");
 }
